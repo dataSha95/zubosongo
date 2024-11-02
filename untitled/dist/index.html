@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Organization</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add this link to your HTML <head> section if not already included -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
+        <h1>Your Organization</h1>
+      </div>
+
+      <!-- Menu Links -->
+      <ul class="nav-links">
+        <li><a href="#" onclick="showSection('home')">Home</a></li>
+        <li><a href="#" onclick="showSection('about')">About Us</a></li>
+        <li><a href="#" onclick="showSection('programs')">Programs</a></li>
+        <li><a href="#" onclick="showSection('community')">Community Engagement</a></li>
+        <li><a href="#" onclick="showSection('get-involved')">Get Involved</a></li>
+        <li><a href="#" onclick="showSection('stories')">Success Stories</a></li>
+        <li><a href="#" onclick="showSection('blog')">Blog</a></li>
+        <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+      </ul>
+
+      <!-- Right-Side Options -->
+      <div class="nav-right">
+        <!-- Language Dropdown -->
+        <div class="language-dropdown">
+          <button class="dropdown-toggle">Language</button>
+          <div class="dropdown-content">
+            <a href="#" onclick="setLanguage('en')">English</a>
+            <a href="#" onclick="setLanguage('es')">Spanish</a>
+            <a href="#" onclick="setLanguage('fr')">French</a>
+          </div>
+        </div>
+
+        <!-- Donate Button -->
+        <a href="#" onclick="showSection('donate')" class="donate-btn">Donate</a>
+
+        <!-- Member Login -->
+        <a href="#" onclick="showLogin()" class="login-btn">Member Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Placeholder for Content Sections -->
+  <main id="main-content">
+    <!-- Content Sections like Home, About Us, etc., will go here -->
+    <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h2>Our Mission</h2>
+      <p>Empowering communities through education, health, and social support.</p>
+      <div class="cta-buttons">
+        <button onclick="showSection('get-involved')">Join Us</button>
+        <button onclick="showSection('donate')">Donate</button>
+        <button onclick="showSection('programs')">Learn More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Programs Section -->
+<section class="featured-programs">
+  <h2>Our Programs</h2>
+  <div class="program-cards" id="program-cards">
+    <!-- Program cards will be populated here by JavaScript -->
+  </div>
+</section>
+
+<!-- Impact Stats Section -->
+<section class="impact-stats">
+  <h2>Our Impact</h2>
+  <div class="stats-cards">
+    <div class="stat-card">
+      <h3>500+</h3>
+      <p>Lives Impacted</p>
+    </div>
+    <div class="stat-card">
+      <h3>$200K+</h3>
+      <p>Funds Raised</p>
+    </div>
+    <div class="stat-card">
+      <h3>150+</h3>
+      <p>Volunteers</p>
+    </div>
+  </div>
+</section>
+    
+    <!-- About Us Section -->
+<section class="about-us" id="about">
+  <h2>About Us</h2>
+
+  <!-- Organization History -->
+  <div class="organization-history">
+    <h3>Our History</h3>
+    <p>Our organization was founded to make a positive difference in the community by providing essential support in education, healthcare, and social welfare. Established in 2010, we are dedicated to improving lives and fostering sustainable development.</p>
+  </div>
+
+  <!-- Core Values -->
+  <div class="core-values">
+    <h3>Our Core Values</h3>
+    <div class="values-list">
+      <div class="value-card">
+        <img src="https://via.placeholder.com/50" alt="Integrity Icon">
+        <h4>Integrity</h4>
+        <p>We uphold honesty and transparency in all our efforts and interactions.</p>
+      </div>
+      <div class="value-card">
+        <img src="https://via.placeholder.com/50" alt="Empathy Icon">
+        <h4>Empathy</h4>
+        <p>We care deeply about the needs of our community and work with compassion.</p>
+      </div>
+      <div class="value-card">
+        <img src="https://via.placeholder.com/50" alt="Innovation Icon">
+        <h4>Innovation</h4>
+        <p>We continuously seek new and better ways to address community challenges.</p>
+      </div>
+      <div class="value-card">
+        <img src="https://via.placeholder.com/50" alt="Commitment Icon">
+        <h4>Commitment</h4>
+        <p>We are dedicated to long-term solutions and lasting impact.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leadership -->
+  <div class="leadership">
+    <h3>Our Leadership</h3>
+    <div class="leadership-cards" id="leadership-cards">
+      <!-- Leadership profiles will be populated here by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Annual Reports -->
+  <div class="annual-reports">
+    <h3>Annual Reports</h3>
+    <p>We believe in transparency and accountability. Here are our recent reports:</p>
+    <ul>
+      <li><a href="report2022.pdf" target="_blank">Annual Report 2022</a></li>
+      <li><a href="report2021.pdf" target="_blank">Annual Report 2021</a></li>
+      <li><a href="report2020.pdf" target="_blank">Annual Report 2020</a></li>
+    </ul>
+  </div>
+</section>
+
+    <!-- Our Programs/Services Section -->
+<section class="our-programs" id="programs">
+  <h2>Our Programs & Services</h2>
+
+  <!-- Program Descriptions -->
+  <div class="programs-list">
+    <h3>Programs</h3>
+    <div class="program-cards" id="program-cards">
+      <!-- Program cards will be dynamically populated here -->
+    </div>
+  </div>
+
+  <!-- Visuals of Past Events -->
+  <div class="past-events">
+    <h3>Past Events Gallery</h3>
+    <div class="events-gallery">
+      <img src="https://via.placeholder.com/150" alt="Event 1">
+      <img src="https://via.placeholder.com/150" alt="Event 2">
+      <img src="https://via.placeholder.com/150" alt="Event 3">
+      <img src="https://via.placeholder.com/150" alt="Event 4">
+      <img src="https://via.placeholder.com/150" alt="Event 5">
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+  <!-- Volunteer Stories -->
+  <div class="volunteer-stories">
+    <h3>Volunteer Stories</h3>
+    <div class="story-slider" id="story-slider">
+      <p id="current-story">Loading stories...</p>
+    </div>
+  </div>
+</section>
+
+<!-- Community Engagement Section -->
+<section class="community-engagement" id="community-engagement">
+  <h2>Community Engagement</h2>
+
+  <!-- Events Calendar -->
+  <div class="events-calendar">
+    <h3>Upcoming Events</h3>
+    <ul id="event-list">
+      <!-- Events will be dynamically populated here -->
+    </ul>
+  </div>
+
+  <!-- Event Registration Form -->
+  <div class="event-registration">
+    <h3>Event Registration</h3>
+    <form id="registration-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="event">Event:</label>
+      <select id="event" name="event" required>
+        <!-- Options will be populated dynamically based on events -->
+      </select>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="registration-success" style="display: none; color: green;">Thank you for registering!</p>
+  </div>
+
+  <!-- Photo/Video Gallery -->
+  <div class="photo-gallery">
+    <h3>Gallery</h3>
+    <div class="gallery-grid" id="gallery-grid">
+      <!-- Gallery images and videos will be populated here -->
+    </div>
+  </div>
+
+  <!-- Modal for Enlarged View -->
+  <div class="modal" id="modal">
+    <span class="close" id="close-modal">&times;</span>
+    <img class="modal-content" id="modal-image" src="" alt="Enlarged view">
+    <video class="modal-content" id="modal-video" controls style="display: none;"></video>
+    <p id="caption"></p>
+  </div>
+</section>
+
+    <!-- Get Involved Section -->
+<section class="get-involved" id="get-involved">
+  <h2>Get Involved</h2>
+
+  <!-- Volunteer Form -->
+  <div class="volunteer-form">
+    <h3>Volunteer Application</h3>
+    <form id="volunteer-form">
+      <label for="volunteer-name">Name:</label>
+      <input type="text" id="volunteer-name" name="volunteer-name" required>
+
+      <label for="volunteer-email">Email:</label>
+      <input type="email" id="volunteer-email" name="volunteer-email" required>
+
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" placeholder="List your relevant skills"></textarea>
+
+      <label for="availability">Availability:</label>
+      <input type="text" id="availability" name="availability" placeholder="e.g., Weekends, weekdays after 5pm" required>
+
+      <label for="interests">Interests:</label>
+      <textarea id="interests" name="interests" placeholder="Tell us why you want to volunteer"></textarea>
+
+      <button type="submit">Apply</button>
+    </form>
+    <p id="volunteer-success" style="display: none; color: green;">Thank you for applying as a volunteer!</p>
+  </div>
+
+  <!-- Membership Information -->
+  <div class="membership-info">
+    <h3>Become a Member</h3>
+    <p>As a member of our organization, you will enjoy several benefits, including access to exclusive events, the opportunity to contribute to meaningful projects, and the ability to make a positive impact in the community.</p>
+    <p>Responsibilities include attending regular meetings, participating in events, and supporting our initiatives.</p>
+  </div>
+
+  <!-- Fundraising and Donations -->
+  <div class="fundraising-donations">
+    <h3>Fundraising & Donations</h3>
+    <p>Your donations help us fund our programs and community initiatives. Every contribution, big or small, makes a difference.</p>
+    <a href="#donate" class="donate-btn">Donate Now</a>
+  </div>
+
+  <!-- Support Us -->
+  <div class="support-us">
+    <h3>Other Ways to Support Us</h3>
+    <p>You can support our organization by sharing our mission on social media, attending our events, and participating in fundraising activities. Every little bit helps us reach more people and expand our impact.</p>
+  </div>
+</section>
+<!-- Success Stories and Testimonials Section -->
+<section class="success-stories" id="success-stories">
+  <h2>Success Stories & Testimonials</h2>
+
+  <!-- Impact Stories -->
+  <div class="impact-stories">
+    <h3>Impact Stories</h3>
+    <div class="stories-container" id="stories-container">
+      <!-- Impact stories will be dynamically added here -->
+    </div>
+  </div>
+
+  <!-- Testimonials Carousel -->
+  <div class="testimonials">
+    <h3>Testimonials</h3>
+    <div class="testimonial-slider" id="testimonial-slider">
+      <p id="current-testimonial">Loading testimonials...</p>
+      <button id="prev-testimonial" class="testimonial-nav">❮</button>
+      <button id="next-testimonial" class="testimonial-nav">❯</button>
+    </div>
+  </div>
+</section>
+<!-- Blog/News Section -->
+<section class="blog-news" id="blog-news">
+  <h2>Latest News & Articles</h2>
+
+  <!-- Articles List -->
+  <div class="articles-list" id="articles-list">
+    <!-- Articles will be dynamically populated here -->
+  </div>
+
+  <!-- Newsletter Sign-Up Form -->
+  <div class="newsletter-signup">
+    <h3>Subscribe to Our Newsletter</h3>
+    <form id="newsletter-form">
+      <label for="subscriber-email">Email:</label>
+      <input type="email" id="subscriber-email" name="subscriber-email" required placeholder="Enter your email">
+      <button type="submit">Subscribe</button>
+    </form>
+    <p id="subscription-success" style="display: none; color: green;">Thank you for subscribing!</p>
+  </div>
+</section>
+<!-- Contact Us Section -->
+<section class="contact-us" id="contact-us">
+  <h2>Contact Us</h2>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h3>Get in Touch</h3>
+    <form id="contact-form">
+      <label for="contact-name">Name:</label>
+      <input type="text" id="contact-name" name="contact-name" required>
+
+      <label for="contact-email">Email:</label>
+      <input type="email" id="contact-email" name="contact-email" required>
+
+      <label for="contact-subject">Subject:</label>
+      <input type="text" id="contact-subject" name="contact-subject" required>
+
+      <label for="contact-message">Message:</label>
+      <textarea id="contact-message" name="contact-message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="contact-success" style="display: none; color: green;">Thank you for your message! We will get back to you soon.</p>
+  </div>
+
+  <!-- Social Media Links -->
+  <div class="social-media">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <!-- Physical Location and Map -->
+  <div class="location-map">
+    <h3>Our Location</h3>
+    <p>Ahmed Sabbir's Bali Tilla Park, Sylhet, Bangladesh</p>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d538.6319776938586!2d92.16577936926481!3d24.745083469779615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751c9b678b9c7a1%3A0x7f987b45aef4dcfa!2sAhmed%20Sabbirs%20Bali%20tilla%20(%20park%20)!5e0!3m2!1sen!2sbd!4v1730522602065!5m2!1sen!2sbd" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Donation System Section -->
+<section class="donation-system" id="donation-system">
+  <h2>Support Our Cause</h2>
+
+  <!-- Donation Options -->
+  <div class="donation-options">
+    <h3>Choose a Payment Method</h3>
+    <div class="payment-buttons">
+      <button onclick="alert('Redirecting to Credit Card Payment')">Credit Card</button>
+      <button onclick="alert('Redirecting to PayPal')">PayPal</button>
+      <button onclick="alert('Redirecting to Bank Transfer')">Bank Transfer</button>
+    </div>
+  </div>
+
+  <!-- Active Campaigns -->
+  <div class="campaigns">
+    <h3>Current Campaigns</h3>
+    <div id="campaigns-list">
+      <!-- Campaigns will be dynamically populated here -->
+    </div>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Quick Links -->
+    <div class="footer-section quick-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#donation-system">Donate</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="footer-section newsletter">
+      <h3>Newsletter Signup</h3>
+      <form id="footer-newsletter-form">
+        <input type="email" id="footer-subscriber-email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p id="footer-subscription-success" style="display: none; color: green;">Thank you for subscribing!</p>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="footer-section social-media">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section contact-info">
+      <h3>Contact Information</h3>
+      <p>Bali Tilla Park, Sylhet, Bangladesh</p>
+      <p>Email: contact@zubosongo.com</p>
+      <p>Phone: 153276732822</p>
+    </div>
+  </div>
+
+  <!-- Copyright Notice -->
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Nizjungle Zubosongo. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

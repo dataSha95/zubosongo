@@ -1,0 +1,1204 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.logo h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background: #444;
+  border-radius: 5px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Donate Button */
+.donate-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #218838;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  min-width: 100px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.language-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Login Button */
+.login-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://images.pexels.com/photos/29168790/pexels-photo-29168790/free-photo-of-wind-turbines-in-a-vast-open-landscape.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.cta-buttons button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.cta-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Featured Programs Section */
+.featured-programs {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.featured-programs h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.program-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.program-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.program-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.program-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+.program-card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.program-card a:hover {
+  text-decoration: underline;
+}
+
+/* Impact Stats Section */
+.impact-stats {
+  padding: 50px 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+.impact-stats h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.stats-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background-color: #444;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #28a745;
+}
+
+.stat-card p {
+  font-size: 1.1em;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-us h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Organization History */
+.organization-history {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.organization-history h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.organization-history p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Core Values */
+.core-values {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 60px;
+}
+
+.core-values h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.value-card {
+  width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.value-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.value-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.value-card p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Leadership */
+.leadership {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+}
+
+.leadership h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.leadership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.leadership-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.leadership-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.leadership-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.leadership-card p {
+  font-size: 0.9em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Annual Reports */
+.annual-reports {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.annual-reports h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.annual-reports p {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.annual-reports ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.annual-reports ul li {
+  margin: 8px 0;
+}
+
+.annual-reports ul li a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.annual-reports ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Our Programs/Services Section */
+.our-programs {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.our-programs h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.programs-list h3, .past-events h3, .volunteer-stories h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Program Cards */
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.program-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: left;
+}
+
+.program-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.program-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.program-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Past Events Gallery */
+.past-events {
+  margin-top: 40px;
+}
+
+.events-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.events-gallery img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.events-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Volunteer Stories Slider */
+.volunteer-stories {
+  margin-top: 40px;
+}
+
+.story-slider {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-style: italic;
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Community Engagement Section */
+.community-engagement {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.community-engagement h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.events-calendar,
+.event-registration,
+.photo-gallery {
+  margin-bottom: 40px;
+}
+
+/* Events List */
+.events-calendar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.events-calendar li {
+  background: #fff;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Event Registration Form */
+.event-registration form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-registration label {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.event-registration input,
+.event-registration select,
+.event-registration button {
+  padding: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.event-registration button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.event-registration button:hover {
+  background-color: #218838;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery-grid img,
+.gallery-grid video {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover,
+.gallery-grid video:hover {
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Get Involved Section */
+.get-involved {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.get-involved h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.volunteer-form,
+.membership-info,
+.fundraising-donations,
+.support-us {
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Volunteer Form */
+.volunteer-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer-form label {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.volunteer-form input,
+.volunteer-form textarea,
+.volunteer-form button {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.volunteer-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.volunteer-form button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.volunteer-form button:hover {
+  background-color: #218838;
+}
+
+/* Membership Information */
+.membership-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Fundraising and Donations */
+.fundraising-donations p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.donate-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.donate-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Support Us */
+.support-us p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Success Stories Section */
+.success-stories {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.success-stories h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.impact-stories,
+.testimonials {
+  margin-bottom: 40px;
+}
+
+/* Impact Stories */
+.stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.story-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.story-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.story-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Testimonials Carousel */
+.testimonial-slider {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.testimonial-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#prev-testimonial {
+  left: 10px;
+}
+
+#next-testimonial {
+  right: 10px;
+}
+
+/* Blog/News Section */
+.blog-news {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.blog-news h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.articles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+/* Article Card */
+.article-card {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.article-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.article-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.article-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.article-card .read-more {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.article-card .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Sign-Up */
+.newsletter-signup {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-signup input {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.newsletter-signup button:hover {
+  background-color: #218838;
+}
+
+
+/* Contact Us Section */
+.contact-us {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-us h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact-form, .social-media, .location-map {
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/* Contact Form */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+/* Social Media Links */
+.social-media h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Location and Map */
+.location-map h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.location-map p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+}
+
+/* Donation System Section */
+.donation-system {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.donation-system h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.donation-options, .campaigns {
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Donation Options */
+.donation-options .payment-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.donation-options button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.donation-options button:hover {
+  background-color: #0056b3;
+}
+
+/* Campaigns and Progress Tracker */
+.campaign-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.campaign-card h4 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.campaign-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.campaign-card .progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.campaign-card .progress-bar {
+  background-color: #28a745;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.campaign-card .progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.campaign-card .contribute-btn {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.campaign-card .contribute-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  text-align: left;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter Signup */
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter input[type="email"] {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.newsletter button {
+  padding: 8px 15px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.newsletter button:hover {
+  background-color: #218838;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Contact Information */
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 20px;
+  font-size: 0.9em;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
